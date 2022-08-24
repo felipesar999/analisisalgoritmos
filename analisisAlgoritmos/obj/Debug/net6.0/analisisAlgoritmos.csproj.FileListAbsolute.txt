@@ -1,0 +1,15 @@
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.exe
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.deps.json
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.runtimeconfig.json
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.dll
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.pdb
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.csproj.AssemblyReference.cache
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.GeneratedMSBuildEditorConfig.editorconfig
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.AssemblyInfoInputs.cache
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.AssemblyInfo.cs
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.csproj.CoreCompileInputs.cache
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.dll
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\refint\analisisAlgoritmos.dll
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.pdb
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.genruntimeconfig.cache
+F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\ref\analisisAlgoritmos.dll
