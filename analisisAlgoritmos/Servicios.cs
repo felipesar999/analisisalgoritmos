@@ -12,6 +12,7 @@ using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Diagnostics;
+using Microsoft.VisualBasic;
 
 namespace analisisAlgoritmos
 {
@@ -43,30 +44,61 @@ namespace analisisAlgoritmos
 
             Stopwatch timer1 = new Stopwatch();
 
-            
-            int N = a.Count;
-            int cnt = 0;
-            Console.WriteLine(a);
-            for (int i=0; i < N; i++)
+            foreach (int ind in a)
             {
-                timer1.Start();
-                for (int j = 0; j < N; j++)
+                var lis = new List<dynamic>();
+                int cnt = 0;
+                int repet = 0;
+
+                for (int u =0; u < ind; u++)
                 {
-                    for (int k = 0; k < N; k++)
+                    Random rnd = new Random();
+                    lis.Add(rnd.Next(0, 10));
+                }
+
+                int N = ind;
+
+                timer1.Start();
+                string inicio = DateTime.Now.ToString("HH:mm:ss");
+                for (int i = 0; i < N; i++)
+                {
+                    
+                    for (int j = 0; j < N; j++)
                     {
-                        if (a[i] + a[j] + a[k] == 0)
+
+                        for (int k = 0; k < N; k++)
                         {
-                            cnt++;
+
+                            if (lis[i] + lis[j] + lis[k] == 0)
+                            {
+                               cnt++;
+                            }
+
+                            repet++;
+
                         }
-                        timer1.Stop();
-                        var time = timer1.ElapsedMilliseconds;
-                        result.Add(time);
 
                     }
-
+                    
                 }
+                string final = DateTime.Now.ToString("HH:mm:ss");
+                timer1.Stop();
+                var time = timer1.Elapsed.TotalSeconds;
+                var res = new 
+                {
+                    Inicial =ind,
+                    horaInicial = inicio,
+                    horaFinal = final,
+                    tSegundos = time,
+                    can_0 = cnt,
+                    repet = repet
+
+                };
+                result.Add(res);
+                Console.WriteLine(res);
                 timer1.Restart();
             }
+            
             return result;
         }
 

@@ -3,8 +3,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Text;
 using analisisAlgoritmos;
-
-
+using System.Runtime.CompilerServices;
 
 public class Ejemplo
 {
@@ -15,28 +14,31 @@ public class Ejemplo
 
         var iteracciones = new List<dynamic>();
 
-        iteracciones.Add(250);
-        iteracciones.Add(500);
+        iteracciones.Add(10);
+        iteracciones.Add(100);
         iteracciones.Add(1000);
         iteracciones.Add(2000);
-        iteracciones.Add(4000);
-        iteracciones.Add(8000);
 
 
         if (algoritmo == 1)
         {
-            Console.WriteLine("aqui");
             var response = Servicios.ThreeSum(iteracciones);
+
         }
         else if (algoritmo == 2)
         {
-            var response = Servicios.TwoSumFast();
+            var response = Servicios.TwoSumFast(iteracciones);
         }
         else if (algoritmo == 3)
         {
             var response = Servicios.ThreeSumFast();
         }
-
+        else
+        {
+            Console.WriteLine("Bye");
+            Console.ReadLine();
+        }
+        /*
         Stopwatch timer1 = new Stopwatch();
 
         int cantidad = 0;
@@ -55,7 +57,7 @@ public class Ejemplo
         suma = primerNumero + segundoNumero;
 
         Console.WriteLine("La suma de {0} y {1} es {2}",
-            primerNumero, segundoNumero, suma);*/
+            primerNumero, segundoNumero, suma);
         timer1.Start();
         String reversar = String.Empty;
         char[] reverse = string1.ToCharArray();
@@ -89,7 +91,7 @@ public class Ejemplo
         string reverse31 = new string(reverse3);
         timer1.Stop();
         Console.WriteLine($"Reverse String is : {reverse31} demoro {timer1.ElapsedMilliseconds} milisegundos\"");
-        Console.ReadLine();
+        Console.ReadLine();*/
 
     }
 }
