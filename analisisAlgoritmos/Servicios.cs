@@ -102,10 +102,20 @@ namespace analisisAlgoritmos
             return result;
         }
 
-        public static bool TwoSumFast()
+        public static List<dynamic> TwoSumFast(List<Object> a)
         {
+            List<dynamic> result = new List<dynamic>();
 
-            return true;
+            Stopwatch timer1 = new Stopwatch();
+
+            a.Sort();
+
+
+
+
+
+
+            return result;
         }
         public static bool ThreeSumFast()
         {
