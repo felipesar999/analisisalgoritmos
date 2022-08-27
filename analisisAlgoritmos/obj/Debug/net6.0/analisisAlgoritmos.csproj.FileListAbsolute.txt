@@ -13,3 +13,18 @@ F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos
 F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.pdb
 F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.genruntimeconfig.cache
 F:\developer\Visual\analisis de algoritmos\analisisAlgoritmos\analisisAlgoritmos\obj\Debug\net6.0\ref\analisisAlgoritmos.dll
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.exe
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.deps.json
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.runtimeconfig.json
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.dll
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\bin\Debug\net6.0\analisisAlgoritmos.pdb
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.csproj.AssemblyReference.cache
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.AssemblyInfoInputs.cache
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.AssemblyInfo.cs
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.dll
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\refint\analisisAlgoritmos.dll
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.pdb
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\analisisAlgoritmos.genruntimeconfig.cache
+C:\Users\Administrador\Documents\developer\analisisalgoritmos\analisisAlgoritmos\obj\Debug\net6.0\ref\analisisAlgoritmos.dll

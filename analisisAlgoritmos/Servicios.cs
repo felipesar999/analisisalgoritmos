@@ -102,25 +102,172 @@ namespace analisisAlgoritmos
             return result;
         }
 
-        public static List<dynamic> TwoSumFast(List<Object> a)
+        public static List<dynamic> TwoSumFast()
         {
             List<dynamic> result = new List<dynamic>();
 
+            Console.WriteLine("Por favor digite la cantidad de datos: ");
+            int cant = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Por favor digite el dato a buscar");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            List<dynamic> universo = new List<dynamic>();
+
+            for(int i=0; i < cant; i++)
+            {
+                universo.Add(i + 1);
+            }
+
             Stopwatch timer1 = new Stopwatch();
+            timer1.Start();
 
-            a.Sort();
+            int inicio = 0;
+            int final = universo.Count() -1;
+            float middle = 0;
+            int middle1 = 0;
+            int cont = 0;
 
+            while (inicio <= final)
+            {
 
+                middle = (inicio + final) / 2;
+                middle1 = (int)Math.Floor(middle);
+                var encont = universo[middle1];
 
-
-
+                if (x == universo[middle1])
+                {
+                    
+                    timer1.Stop();
+                    var time = timer1.Elapsed.TotalSeconds;
+                    var res = new {
+                            posicion = middle1,
+                            repet = cont,
+                            time = time,
+                        };
+                    Console.WriteLine(res);
+                    result.Add(res);
+                    return result;
+                }
+                if (encont > x)
+                {
+                    final = middle1 -1;
+                    cont++;
+                }
+                else
+                {
+                    inicio = middle1 +1;
+                    cont++;
+                }                
+                
+            }
+            if (inicio > final)
+            {
+                timer1.Stop();
+                var time = timer1.Elapsed.TotalSeconds;
+                var res = new
+                {
+                    posicion = middle1,
+                    repet = cont,
+                    time = time,
+                };
+                result.Add(res);
+                Console.WriteLine(res);
+                return result;
+            }
 
             return result;
         }
-        public static bool ThreeSumFast()
+        public static List<dynamic> ThreeSumFast()
         {
+            List<dynamic> result = new List<dynamic>();
 
-            return true;
+            Console.WriteLine("Por favor digite la cantidad de datos: ");
+            int cant = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Por favor digite el dato a buscar");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            List<dynamic> universo = new List<dynamic>();
+
+            for (int i = 0; i < cant; i++)
+            {
+                universo.Add(i + 1);
+            }
+
+            Stopwatch timer1 = new Stopwatch();
+            timer1.Start();
+
+            int inicio = 0;
+            int final = universo.Count() - 1;
+            float middle = 0;
+            int middle1 = 0;
+            int cont = 0;
+
+            /*while (inicio <= final)
+            {
+
+                middle = (inicio + final) / 2;
+                middle1 = (int)Math.Floor(middle);
+                var encont = universo[middle1];
+
+                if (x == universo[middle1])
+                {
+
+                    timer1.Stop();
+                    var time = timer1.Elapsed.TotalSeconds;
+                    var res = new
+                    {
+                        posicion = middle1,
+                        repet = cont,
+                        time = time,
+                    };
+                    Console.WriteLine(res);
+                    result.Add(res);
+                    return result;
+                }
+                if (encont > x)
+                {
+                    final = middle1 - 1;
+                    cont++;
+                }
+                else
+                {
+                    inicio = middle1 + 1;
+                    cont++;
+                }
+
+            }
+            if (inicio > final)
+            {
+                timer1.Stop();
+                var time = timer1.Elapsed.TotalSeconds;
+                var res = new
+                {
+                    posicion = middle1,
+                    repet = cont,
+                    time = time,
+                };
+                result.Add(res);
+                Console.WriteLine(res);
+                return result;
+            }
+            */
+
+            for(int i=0; i> final; i++)
+            {
+                for (int j = 0; j > final; j++)
+                {
+                    if (i == j)
+                    {
+                        cont++;
+                    }
+
+                }
+
+            }
+
+            return result;
         }
 
     }

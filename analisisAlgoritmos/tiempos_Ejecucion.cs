@@ -27,7 +27,7 @@ public class Ejemplo
         }
         else if (algoritmo == 2)
         {
-            var response = Servicios.TwoSumFast(iteracciones);
+            var response = Servicios.TwoSumFast();
         }
         else if (algoritmo == 3)
         {
