@@ -8,21 +8,17 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\developer\\analisisalgoritmos\\analisisAlgoritmos\\analisisAlgoritmos.csproj",
+      "projectUniqueName": "F:\\developer\\Visual\\analisis de algoritmos\\analisisAlgoritmos\\analisisAlgoritmos\\analisisAlgoritmos.csproj",
       "projectName": "analisisAlgoritmos",
-      "projectPath": "C:\\Users\\Administrador\\Documents\\developer\\analisisalgoritmos\\analisisAlgoritmos\\analisisAlgoritmos.csproj",
+      "projectPath": "F:\\developer\\Visual\\analisis de algoritmos\\analisisAlgoritmos\\analisisAlgoritmos\\analisisAlgoritmos.csproj",
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\Documents\\developer\\analisisalgoritmos\\analisisAlgoritmos\\obj\\",
+      "outputPath": "F:\\developer\\Visual\\analisis de algoritmos\\analisisAlgoritmos\\analisisAlgoritmos\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -56,7 +52,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -65,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

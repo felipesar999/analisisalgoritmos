@@ -13,6 +13,7 @@ using System.Linq;
 using System.Net;
 using System.Diagnostics;
 using Microsoft.VisualBasic;
+using System.ComponentModel;
 
 namespace analisisAlgoritmos
 {
@@ -101,7 +102,6 @@ namespace analisisAlgoritmos
             
             return result;
         }
-
         public static List<dynamic> TwoSumFast()
         {
             List<dynamic> result = new List<dynamic>();
@@ -119,17 +119,20 @@ namespace analisisAlgoritmos
                 universo.Add(i + 1);
             }
 
-            Stopwatch timer1 = new Stopwatch();
-            timer1.Start();
+            
 
             int inicio = 0;
             int final = universo.Count() -1;
             float middle = 0;
             int middle1 = 0;
             int cont = 0;
+            Stopwatch timer2 = new Stopwatch();
+            timer2.Start();
 
             while (inicio <= final)
             {
+                Stopwatch timer1 = new Stopwatch();
+                timer1.Start();
 
                 middle = (inicio + final) / 2;
                 middle1 = (int)Math.Floor(middle);
@@ -151,20 +154,43 @@ namespace analisisAlgoritmos
                 }
                 if (encont > x)
                 {
+                    timer1.Stop();
+                    var time = timer1.Elapsed.TotalSeconds;
+                    timer1.Restart();
                     final = middle1 -1;
                     cont++;
+                    var res = new
+                    {
+                        posicion = middle1,
+                        repet = cont,
+                        time = time,
+                    };
+                    result.Add(res);
+                    Console.WriteLine(res);
                 }
                 else
                 {
-                    inicio = middle1 +1;
+                    timer1.Stop();
+                    var time = timer1.Elapsed.TotalSeconds;
+                    timer1.Restart();
+                    inicio = middle1 + 1;
                     cont++;
+                    var res = new
+                    {
+                        posicion = middle1,
+                        repet = cont,
+                        time = time,
+                    };
+                    result.Add(res);
+                    Console.WriteLine(res);
                 }                
                 
             }
             if (inicio > final)
             {
-                timer1.Stop();
-                var time = timer1.Elapsed.TotalSeconds;
+
+                timer2.Stop();
+                var time = timer2.Elapsed.TotalSeconds;
                 var res = new
                 {
                     posicion = middle1,
@@ -197,78 +223,48 @@ namespace analisisAlgoritmos
 
             Stopwatch timer1 = new Stopwatch();
             timer1.Start();
-
-            int inicio = 0;
             int final = universo.Count() - 1;
-            float middle = 0;
-            int middle1 = 0;
             int cont = 0;
+            int uni = 0;
 
-            /*while (inicio <= final)
+            for(int i=0; i < final; i++)
             {
-
-                middle = (inicio + final) / 2;
-                middle1 = (int)Math.Floor(middle);
-                var encont = universo[middle1];
-
-                if (x == universo[middle1])
+                for (int j = i + 1; j < final; j++)
                 {
-
-                    timer1.Stop();
-                    var time = timer1.Elapsed.TotalSeconds;
-                    var res = new
-                    {
-                        posicion = middle1,
-                        repet = cont,
-                        time = time,
-                    };
-                    Console.WriteLine(res);
-                    result.Add(res);
-                    return result;
-                }
-                if (encont > x)
-                {
-                    final = middle1 - 1;
-                    cont++;
-                }
-                else
-                {
-                    inicio = middle1 + 1;
-                    cont++;
-                }
-
-            }
-            if (inicio > final)
-            {
-                timer1.Stop();
-                var time = timer1.Elapsed.TotalSeconds;
-                var res = new
-                {
-                    posicion = middle1,
-                    repet = cont,
-                    time = time,
-                };
-                result.Add(res);
-                Console.WriteLine(res);
-                return result;
-            }
-            */
-
-            for(int i=0; i> final; i++)
-            {
-                for (int j = 0; j > final; j++)
-                {
-                    if (i == j)
-                    {
-                        cont++;
-                    }
-
+                    uni = rank((-universo[i]) - (universo[j]), universo);
+                    if (uni > j) cont++;
                 }
 
             }
 
+            timer1.Stop();
+            var time = timer1.Elapsed.TotalSeconds;
+            var res = new
+            {
+                posicion = uni,
+                repet = cont,
+                time = time,
+            };
+            Console.WriteLine(res);
+            result.Add(res);
             return result;
         }
 
+        private static int rank(int key, List<dynamic> universo )
+        {
+            int lo = 0;
+            int hi = universo.Count() - 1;
+            while (lo <= hi)
+            {
+                int mid = lo + (hi - lo) / 2;
+                if (key < universo[mid]) hi = mid - 1;
+                else if (key > universo[mid]) lo = mid + 1;
+                else return mid;
+                
+            }
+            return -1;
+        }
+
     }
+    
 }

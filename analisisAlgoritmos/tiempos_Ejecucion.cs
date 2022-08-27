@@ -23,15 +23,18 @@ public class Ejemplo
         if (algoritmo == 1)
         {
             var response = Servicios.ThreeSum(iteracciones);
+            Console.ReadLine();
 
         }
         else if (algoritmo == 2)
         {
             var response = Servicios.TwoSumFast();
+            Console.ReadLine();
         }
         else if (algoritmo == 3)
         {
             var response = Servicios.ThreeSumFast();
+            Console.ReadLine();
         }
         else
         {
